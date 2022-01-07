@@ -2,7 +2,7 @@
 
 This package allows for simple facial recognition to be used in Unity3D projects.
 
-![Tracking.gif](Unity%20Face%20Tracking%20Package%207ad7cda6a3bb4560920f95f524815b9b/Tracking.gif)
+![Tracking.gif](README/Tracking.gif)
 
 ## Setup
 
