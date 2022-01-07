@@ -11,6 +11,6 @@ This package allows for simple facial recognition to be used in Unity3D projects
 3. Create a plane object in the Unity3D Scene and attach the FaceDetector.cs script to the plane.
 4. On start, the plane should display video feed of the first detected webcam device along with rectangular regions outlining the face and facial features.
 
-# Usage
+## Usage
 
 The package detects the face, eyes, and mouth regions, outlining them with rectangles. The rectangles are OpenCvSharp.Rect instances. More documentation on [OpenCv and](https://opencv.org/) [OpenCvSharp](https://shimat.github.io/opencvsharp_docs/html/d69c29a1-7fb1-4f78-82e9-79be971c3d03.htm) can be found online.
