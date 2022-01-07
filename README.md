@@ -1,9 +1,5 @@
 # Unity Face Tracking Package
 
-Progress: Working
-
-# Unity Face Tracking
-
 This package allows for simple facial recognition to be used in Unity3D projects.
 
 ![Tracking.gif](README/Tracking.gif)
