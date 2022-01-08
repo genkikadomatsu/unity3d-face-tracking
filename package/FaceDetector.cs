@@ -5,46 +5,49 @@ using OpenCvSharp; //OpenCV Library
 
 public class FaceDetector : MonoBehaviour
 {
-    WebCamTexture video; //Live video input is rendered onto this kind of texture
 
-    CascadeClassifier faceClassifier; //haar cascade classifier
+    WebCamTexture video;
+    
+    //Haar cascade classifiers
+    CascadeClassifier faceClassifier; 
     CascadeClassifier eyeClassifier;
     CascadeClassifier mouthClassifier;
 
-
+    //Detected faces and features
+    public OpenCvSharp.Rect[] faces;
+    public OpenCvSharp.Rect[] eyes;
+    public OpenCvSharp.Rect[] mouths;
+    
+    //Selected face and features
     OpenCvSharp.Rect FaceBorder;
     OpenCvSharp.Rect[] EyeBorder;
     OpenCvSharp.Rect MouthBorder;
 
+    //Texture with drawn regions
     Texture newtexture;
-
-    public OpenCvSharp.Rect[] faces;
-    public OpenCvSharp.Rect[] eyes;
-    public OpenCvSharp.Rect[] mouths;
-
+    
+    //The video frame
     Mat frame;
+    
+    //The face frame passed to classify eyes and mouth features
     Mat subFrame;
 
     // Start is called before the first frame update
     void Start()
     {
         //Get video
-        WebCamDevice[] devices = WebCamTexture.devices; //This loads all of the available detected WebCam devices
-        video = new WebCamTexture(devices[0].name); //Use the first available webcam for the texture
+        WebCamDevice[] devices = WebCamTexture.devices;
+        video = new WebCamTexture(devices[0].name);
         video.Play();
-
         faceClassifier = new CascadeClassifier(Application.dataPath + @"/haarcascade_frontalface_default.xml");
         eyeClassifier = new CascadeClassifier(Application.dataPath + @"/haarcascade_eye.xml");
         mouthClassifier = new CascadeClassifier(Application.dataPath + @"/haarcascade_mouth.xml");
-
-
     }
-    //Hello 
+
     // Update is called once per frame
     void Update()
     {
         frame = OpenCvSharp.Unity.TextureToMat(video);
-       
         detect(frame);
         display(frame);
     }
@@ -54,8 +57,6 @@ public class FaceDetector : MonoBehaviour
     void detect(Mat frame)
     {
         faces = faceClassifier.DetectMultiScale(frame, 1.1, 2, HaarDetectionType.FindBiggestObject);
-
-        //If a face is found find the eyes and mouth
         if (faces.Length >= 1)
         {
             subFrame = frame.SubMat(faces[0]);
@@ -94,7 +95,7 @@ public class FaceDetector : MonoBehaviour
         }
 
         newtexture = OpenCvSharp.Unity.MatToTexture(frame);
-        GetComponent<Renderer>().material.mainTexture = newtexture; //Set the renderer material of the object to which this script is attached to the video
+        GetComponent<Renderer>().material.mainTexture = newtexture;
     }
 }
 
