@@ -19,4 +19,6 @@ The package detects the face, eyes, and mouth regions, outlining them with recta
 The package currently only allows for frontal face detection and classification in the form of rectangular regions. Sometimes the detected regions can briefly jump to incorrect areas of the video so ensuring consistency between frames is adviced.
 
 ## Future Work
-Work is currently being done to generalize this package to track multiple faces and to provide more precise facial geometry detection. In tandem, another unity package that detects common facial expressions (and facial expressions often used in facial muscular reeducation therapy) is also being developped.
+Work is currently being done to generalize this package to track multiple faces and to provide more precise facial geometry detection.
+
+In tandem, another unity package that detects common facial expressions (and facial expressions often used in facial muscular reeducation therapy) is also being developped.
