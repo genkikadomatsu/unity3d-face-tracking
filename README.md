@@ -18,7 +18,9 @@ The package detects the face, eyes, and mouth regions, outlining them with recta
 ## Limitations
 The package currently only allows for frontal face detection and classification in the form of rectangular regions. Sometimes the detected regions can briefly jump to incorrect areas of the video so ensuring consistency between frames is adviced.
 
-## Future Work
+## Future and Current Developments
 Work is currently being done to generalize this package to track multiple faces and to provide more precise facial geometry detection.
 
 In tandem, another unity package that detects common facial expressions (and facial expressions often used in facial muscular reeducation therapy) is also being developped.
+
+In the future, an option to hide the webcam video feed will be added, but as it has been found that [visual feedback improves the effectiveness of muscular reeducation therapy,](https://annalskemu.org/journal/index.php/annals/article/view/4655) it is a shelved task. For the same reason, excluding video feedback in therapeutic games is not advised.
