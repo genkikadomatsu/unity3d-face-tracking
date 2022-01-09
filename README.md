@@ -1,6 +1,6 @@
 # Unity3D Face Tracking Package
 
-This package allows for simple facial tracking to be used in Unity3D projects.
+This package allows for simple facial tracking to be used in Unity3D projects. Originally build at [HackMIT](https://hackmit.org/) in the health care track; with the intention that the package be an ease-of-use alternative for developers building games that take advantage of [facial muscular reeducation therapy](https://pubmed.ncbi.nlm.nih.gov/18470837/) to help Bell's Palsy, Parkinson's, and Stroke patients.
 
 ![Tracking.gif](README/Tracking.gif)
 
