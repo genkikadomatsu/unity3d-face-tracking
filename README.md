@@ -23,4 +23,4 @@ Work is currently being done to generalize this package to track multiple faces 
 
 In tandem, another unity package that detects common facial expressions (and facial expressions often used in facial muscular reeducation therapy) is also being developped.
 
-In the future, an option to hide the webcam video feed will be added, but as it has been found that [visual feedback improves the effectiveness of muscular reeducation therapy,](https://annalskemu.org/journal/index.php/annals/article/view/4655) it is a shelved task. For the same reason, excluding video feedback in therapeutic games is not advised.
+In the future, an option to hide the webcam video feed will be added, but as it has been found that [visual feedback improves the effectiveness of muscular reeducation therapy,](https://annalskemu.org/journal/index.php/annals/article/view/4655) it is a shelved task. For the same reason, excluding video feedback from therapeutic games is not advised.
