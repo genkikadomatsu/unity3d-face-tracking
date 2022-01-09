@@ -1,6 +1,6 @@
 # Unity3D Face Tracking Package
 
-Originally build at [HackMIT 2021](https://hackmit.org/) in the health care track, this package allows for simple facial tracking, providing an ease-of-use alternative for developers building therapeutic games that take advantage of [facial muscular reeducation](https://pubmed.ncbi.nlm.nih.gov/18470837/) to help Bell's Palsy, Parkinson's, and Stroke patients.
+Originally built at [HackMIT 2021](https://hackmit.org/) in the health care track, this package allows for simple facial tracking, providing an ease-of-use alternative for developers building therapeutic games that take advantage of [facial muscular reeducation](https://pubmed.ncbi.nlm.nih.gov/18470837/) to help Bell's Palsy, Parkinson's, and Stroke patients.
 
 ![Tracking.gif](README/Tracking.gif)
 
