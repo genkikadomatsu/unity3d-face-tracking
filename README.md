@@ -13,10 +13,10 @@ Originally build at [HackMIT](https://hackmit.org/) in the health care track, th
 
 ## Usage
 
-The package detects the face, eyes, and mouth regions, outlining them with rectangles. The rectangles are OpenCvSharp.Rect instances. More documentation on [OpenCv and](https://opencv.org/) [OpenCvSharp](https://shimat.github.io/opencvsharp_docs/html/d69c29a1-7fb1-4f78-82e9-79be971c3d03.htm) can be found online.
+The package detects the face, eyes, and mouth regions, outlining them with rectangles. The rectangles are OpenCvSharp.Rect instances. More documentation on [OpenCv](https://opencv.org/) and [OpenCvSharp](https://shimat.github.io/opencvsharp_docs/html/d69c29a1-7fb1-4f78-82e9-79be971c3d03.htm) can be found online.
 
 ## Limitations
 The package currently only allows for frontal face detection and classification in the form of rectangular regions. Sometimes the detected regions can briefly jump to incorrect areas of the video so ensuring consistency between frames is adviced.
 
 ## Future Work
-Work is currently being done to generalize this package to track multiple faces and to provide more precise facial geometry detection.
+Work is currently being done to generalize this package to track multiple faces and to provide more precise facial geometry detection. In tandem, another unity package that detects common facial expressions (and facial expressions often used in facial muscular reeducation therapy) is also being developped.
